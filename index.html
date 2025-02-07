@@ -1,185 +1,277 @@
 <!DOCTYPE html>
-<html lang="fr-ang-esp-all-ita">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Donation Solidaire</title>
-  <style>
-    /* Réinitialisation et styles de base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f9f9f9;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    /* Header et navigation */
-    header {
-      background: #4CAF50;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      background: #333;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-    }
-    nav ul li {
-      margin: 0 1rem;
-    }
-    nav ul li a {
-      color: #fff;
-      font-weight: bold;
-      padding: 0.5rem 0;
-      display: block;
-    }
-    /* Sections */
-    section {
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 800px;
-      background: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    /* Section Accueil et Hero */
-    .hero {
-      background: url('https://picsum.photos/1200/400') no-repeat center center/cover;
-      height: 400px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 1rem;
-      border-radius: 10px;
-    }
-    /* Formulaire */
-    form {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1rem;
-    }
-    form label {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-    form input, form textarea {
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    form button {
-      margin-top: 1rem;
-      padding: 0.7rem;
-      background: #4CAF50;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    /* Témoignages */
-    .testimonials {
-      background: #f0f0f0;
-      padding: 1rem;
-      border-radius: 5px;
-      margin-top: 1.5rem;
-    }
-    .testimonial {
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #ddd;
-    }
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #333;
-      color: #fff;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation - Accueil</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- En-tête -->
   <header>
-    <h1>Donation Solidaire</h1>
-    <p>Ensemble, aidons ceux qui en ont besoin</p>
+    <h1>Donation</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="donation.html">Faire un don</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <!-- Section Accueil -->
-  <section id="accueil">
-    <div class="hero">
-      <h1>Bienvenue sur Donation Solidaire</h1>
-    </div>
-    <div class="content">
-      <h2>Un lieu de confiance</h2>
-      <p>Nous sommes dédiés à aider les personnes en difficulté. Ici, vous pouvez donner ou recevoir de l'aide en toute sécurité. Votre générosité fait la différence dans la vie de ceux qui en ont le plus besoin.</p>
-    </div>
-    <div class="testimonials">
-      <h3>Témoignages</h3>
-      <div class="testimonial">
-        <p>"Grâce à Donation Solidaire, j'ai pu recevoir l'aide dont j'avais besoin. Merci infiniment !" - Marie, 34 ans</p>
-      </div>
-      <div class="testimonial">
-        <p>"J'ai fait un don et j'ai vu comment il a transformé la vie d'une famille. C'est vraiment inspirant !" - Jean, 45 ans</p>
-      </div>
-      <div class="testimonial">
-        <p>"Ce site est un pont entre le besoin et la solidarité. Je le recommande à tous !" - Sophie, 28 ans</p>
-      </div>
-    </div>
-  </section>
-  <!-- Section Services -->
-  <section id="services">
-    <h2>Nos Services</h2>
-    <p>Nous offrons un espace où vous pouvez demander de l'aide ou proposer votre soutien à ceux qui en ont besoin.</p>
-    <form action="#" method="post">
-      <label for="name">Nom :</label>
-      <input type="text" id="name" name="name" placeholder="Votre nom" required>
-      
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" placeholder="Votre email" required>
-      
-      <label for="need">Détaillez votre besoin ou ce que vous proposez :</label>
-      <textarea id="need" name="need" rows="5" placeholder="Décrivez votre situation ou votre offre d'aide" required></textarea>
-      
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
-  <!-- Section Contact -->
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p>Pour toute question ou information, n'hésitez pas à nous contacter :</p>
-    <p>Email : <a href="mailto:renatereinartz4@gmail.com">renatereinartz4@gmail.com</a></p>
-  </section>
-  <!-- Pied de page -->
+
+  <main>
+    <!-- Bannière avec image -->
+    <section class="banner">
+      <img src="https://via.placeholder.com/800x300.png?text=Donation+Banner" alt="Bannière Donation">
+    </section>
+    
+    <!-- Présentation -->
+    <section class="intro">
+      <h2>Bienvenue sur Donation</h2>
+      <p>Notre mission est de permettre à chacun de faire un don pour aider les plus démunis et de recevoir de l'aide lorsque cela est nécessaire.</p>
+      <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Animation Donation">
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Donation Solidaire. Tous droits réservés.</p>
+    <p>&copy; 2025 Donation. Tous droits réservés.</p>
   </footer>
+
+  <script src="js/script.js"></script>
+</body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation - Faire un don</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <html>
+  <header>
+    <h1>Donation</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="donation.html">Faire un don</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Formulaire de don -->
+    <section class="donation-form">
+      <h2>Faites un don</h2>
+      <!-- Le formulaire doit être traité côté serveur pour envoyer une notification à votre email -->
+      <form id="donationForm" method="POST" action="process_donation.php">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="amount">Montant du don :</label>
+        <input type="number" id="amount" name="amount" required>
+        
+        <label for="message">Message :</label>
+        <textarea id="message" name="message"></textarea>
+        
+        <button type="submit">Envoyer le don</button>
+      </form>
+    </section>
+
+    <!-- Section commentaires -->
+    <section class="comments">
+      <h2>Commentaires</h2>
+      <!-- Affichage des commentaires existants -->
+      <div id="commentsList">
+        <div class="comment">
+          <p><strong>Jean :</strong> Merci pour ce beau projet !</p>
+        </div>
+      </div>
+      <!-- Formulaire pour ajouter un commentaire -->
+      <form id="commentForm" method="POST" action="process_comment.php">
+        <label for="commentName">Nom :</label>
+        <input type="text" id="commentName" name="commentName" required>
+        
+        <label for="commentText">Votre commentaire :</label>
+        <textarea id="commentText" name="commentText" required></textarea>
+        
+        <button type="submit">Ajouter un commentaire</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Donation. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
+/* Style de base pour le site Donation */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #008080;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 2em;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+form label {
+  display: block;
+  margin-top: 0.5em;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form button {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005757;
+}
+
+.comments {
+  margin-top: 2em;
+}
+
+.comment {
+  background-color: #e2e2e2;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Script pour gérer les interactions du site Donation */
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Gestion du formulaire de don
+  const donationForm = document.getElementById('donationForm');
+  if (donationForm) {
+    donationForm.addEventListener('submit', function(e) {
+      // Vous pouvez ajouter ici une validation supplémentaire
+      // Intégrez une solution côté serveur ou un service tiers (Formspree, EmailJS, etc.) pour envoyer une notification à dupondmoretti1973@gmail.com
+      alert("Votre don a été soumis. Nous vous remercions pour votre générosité!");
+      // e.preventDefault(); // Décommentez pour tester sans soumission réelle
+    });
+  }
+
+  // Gestion du formulaire de contact
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      // Ajoutez ici votre logique de traitement ou intégration avec un service de mail
+      alert("Votre message a été envoyé. Nous vous répondrons dans les plus brefs délais.");
+      // e.preventDefault(); // Décommentez pour tester sans soumission réelle
+    });
+  }
+
+  // Gestion du formulaire de commentaires
+  const commentForm = document.getElementById('commentForm');
+  if (commentForm) {
+    commentForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('commentName').value;
+      const text = document.getElementById('commentText').value;
+      const commentsList = document.getElementById('commentsList');
+
+      // Création dynamique d’un commentaire
+      const commentDiv = document.createElement('div');
+      commentDiv.classList.add('comment');
+      commentDiv.innerHTML = `<p><strong>${name} :</strong> ${text}</p>`;
+
+      commentsList.appendChild(commentDiv);
+
+      commentForm.reset();
+
+      // Pour une gestion complète, intégrez ici une requête AJAX pour enregistrer le commentaire côté serveur
+    });
+  }
+});
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Récupérer et nettoyer les données
+    $name    = htmlspecialchars($_POST['name']);
+    $email   = htmlspecialchars($_POST['email']);
+    $amount  = htmlspecialchars($_POST['amount']);
+    $message = htmlspecialchars($_POST['message']);
+    
+    // Définir l'email de destination et le sujet
+    $to      = "dupondmoretti1973@gmail.com";
+    $subject = "Nouveau don de $name";
+    $body    = "Nom : $name\nEmail : $email\nMontant : $amount\nMessage : $message";
+    
+    // Envoyer l'email
+    if (mail($to, $subject, $body)) {
+        echo "Votre don a été soumis avec succès.";
+    } else {
+        echo "Erreur lors de la soumission du don.";
+    }
+}
+?>
